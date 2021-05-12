@@ -1,0 +1,71 @@
+Query         Q9NY64
+Match_columns 477
+No_of_seqs    884 out of 2558
+Neff          12.1665
+Searched_HMMs 1
+Date          Tue Apr 27 14:33:40 2021
+Command       hhalign -i /Users/charlotte/TM/TM_helices/hhalign/a3m/Q9NY64.a3m -t /Users/charlotte/TM/TM_helices/hhalign/ref_seqs/O97467.a3m -glob -o /Users/charlotte/TM/TM_helices/hhalign/atab_O97467/Q9NY64.hhr -atab /Users/charlotte/TM/TM_helices/hhalign/atab_O97467/Q9NY64.atab 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 O97467                         100.0 3.6E-46 3.6E-46  252.1   0.0  454    1-477     1-494 (504)
+
+No 1
+>O97467
+Probab=100.00  E-value=3.6e-46  Score=252.13  Aligned_cols=454  Identities=24%  Similarity=0.375  Sum_probs=275.3  Template_Neff=12.952
+
+Q Q9NY64            1 MTPEDPEETQPLLGPPGGSAPRGRRVFLAAFAAALGPLSFGFALGYSSPAIPSLQRAAPPA--------PRLDDAAASWF   72 (477)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--------~~~s~~~~~~~   72 (477)
+                      |++.+.+..+.....+..+.+..+..+.......+..+..++.........+.+.+++..+        .+.+..+.+++
+T Consensus         1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   80 (504)
+T O97467            1 MTKSSKDICSENEGKKNGKSGFFSTSFKYVLSACIASFIFGYQVSVLNTIKNFIVVEFEWCKGEKDRLNCSNNTIQSSFL   80 (504)
+Confidence            3333222221111111112222233344455555666666666667777777777666211        12236688999
+
+
+Q Q9NY64           73 GAVVTLGAAAGGVLGGWLVDRAGRKLSLLLCSVPFVAGFAVITAAQDVWMLLGGRLLTGLACGVASLVAPVYISEIAYPA  152 (477)
+Q Consensus        73 ~~~~~~~~~~~~~~~g~l~d~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~g~~~~~~~~~~~~~~~~~~~~~  152 (477)
+                      .++..++..++.++.|++.|+ |||+.+..+.++..++.++..+.++++.+++.+++.|++.+...+....++.|..|++
+T Consensus        81 ~~~~~~~~~~~~~~~g~~~~~-grr~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~g~~~~~~~~~~~~~~~~~~~~~  159 (504)
+T O97467           81 LASVFIGAVLGCGFSGYLVQF-GRRLSLLIIYNFFFLVSILTSITHHFHTILFARLLSGFGIGLVTVSVPMYISEMTHKD  159 (504)
+Confidence            999999999999999999987 9999999999999888888888899999999999999999999999999999999999
+
+
+Q Q9NY64          153 VRGLLGSCVQLMVVVGILLAYLAGWVL------------------EWRWLAVLGCVPPSLMLLLM--CFMPETPRFLLTQ  212 (477)
+Q Consensus       153 ~~~~~~~~~~~~~~~g~~~~~~~~~~~------------------~~~~~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~  212 (477)
+                      +|++..+.......+|..+++.+...+                  +|++.+.+..+..++..+..  .+.|+.+++..++
+T Consensus       160 ~r~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p~~~~~~  239 (504)
+T O97467          160 KKGAYGVMHQLFITFGIFVAVMLGLAMGEGPKADSTEPLTSFAKLWWRLMFLFPSVISLIGILALVVFFKEETPYFLFEK  239 (504)
+Confidence            999999999888888888887776544                  28888888777666544433  3446655443333
+
+
+Q Q9NY64          213 HRRQEAMAALRFLWGSEQGWE----------DP-PIGAEQSFHLALLRQPGIYKPFIIGVSLMAFQQLSGVNAVMFYAET  281 (477)
+Q Consensus       213 ~~~~~~~~~~~~~~~~~~~~~----------~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  281 (477)
+                      ++.++..+..++....+....          +. ..........+..+.+..++..+.......+...........+.+.
+T Consensus       240 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  319 (504)
+T O97467          240 GRIEESKNILKKIYETDNVDEPLNAIKEAVEQNESAKKNSLSLLSALKIPSYRYVIILGCLLSGLQQFTGINVLVSNSNE  319 (504)
+Confidence            222222222221111100000          00 0000001111222223333333333333333333233333333333
+
+
+Q Q9NY64          282 IFEE-AKFKDSSLASVVVGVIQVLFTAVAALIMDRAGRRLLLVLSGVVMVFSTSAFGAYFKLTQGGPGNSSHVAISAPVS  360 (477)
+Q Consensus       282 ~~~~-~~~~~~~~~~~~~~~~~~~~~~~~g~l~~r~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  360 (477)
+                      ..++ .+....+.......+..+++.++.+++.||+|||+.+..+..+..++...+.........               
+T Consensus       320 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~dr~g~r~~~~~~~~~~~~~~~~~~~~~~~~~~---------------  384 (504)
+T O97467          320 LYKEFLDSHLITILSVVMTAVNFLMTFPAIYIVEKLGRKTLLLWGCVGVLVAYLPTAIANEINRN---------------  384 (504)
+Confidence            3322 222234555667788888899999999999999998888888777766655543211100               
+
+
+Q Q9NY64          361 AQPVDASVGLAWLAVGSMCLFIAGFAVGWGPIPWLLMSEIFPLHVKGVATGICVLTNWLMAFLVTKEFSSLMEVLRPYGA  440 (477)
+Q Consensus       361 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~~g~l~~~~g~~~~  440 (477)
+                            .....+............+.....+....+..+.+|++.|+++.|+......++..+++.+.+.+.+. ++...
+T Consensus       385 ------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p~~~r~~~~~~~~~~~~~~~~~~~~~~~~l~~~-~~~~~  457 (504)
+T O97467          385 ------SNFVKILSIVATFVMIISFAVSYGPVLWIYLHEMFPSEIKDSAASLASLVNWVCAIIVVFPSDIIIKK-SPSIL  457 (504)
+Confidence                  01111223333334444444445566667889999999999999999999999999999999988876 55566
+
+
+Q Q9NY64          441 FWLASAFCIFSVLFTLFCVPETKGKTLEQITAHFEGR  477 (477)
+Q Consensus       441 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  477 (477)
+                      +++.+++.++..++.++..+++++++.++.++..+++
+T Consensus       458 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  494 (504)
+T O97467          458 FIVFSVMSILTFFFIFFFIKETKGGEIGTSPYITMEE  494 (504)
+Confidence            7766666666666666656655443322211111000
+
+

@@ -1,0 +1,71 @@
+Query         P96710
+Match_columns 464
+No_of_seqs    576 out of 1917
+Neff          12.2743
+Searched_HMMs 1
+Date          Tue Apr 27 14:30:37 2021
+Command       hhalign -i /Users/charlotte/TM/TM_helices/hhalign/a3m/P96710.a3m -t /Users/charlotte/TM/TM_helices/hhalign/ref_seqs/O97467.a3m -glob -o /Users/charlotte/TM/TM_helices/hhalign/atab_O97467/P96710.hhr -atab /Users/charlotte/TM/TM_helices/hhalign/atab_O97467/P96710.atab 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 O97467                         100.0 1.6E-48 1.6E-48  265.0   0.0  461    1-464     1-493 (504)
+
+No 1
+>O97467
+Probab=100.00  E-value=1.6e-48  Score=264.99  Aligned_cols=461  Identities=23%  Similarity=0.420  Sum_probs=297.1  Template_Neff=12.952
+
+Q P96710            1 MKNTPTQLEPNV---PVTRSHSMGFVILISCAAGLGGLLYGYDTAVISGAIGFLKDLYSLS------------PFMEGLV   65 (464)
+Q Consensus         1 m~~~~~~~~~~~---~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~s------------~~~~g~~   65 (464)
+                      |++.........   +..+++..+..+...+...++.+.+|+.....+...+.+.++++.+            ..+.+++
+T Consensus         1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   80 (504)
+T O97467            1 MTKSSKDICSENEGKKNGKSGFFSTSFKYVLSACIASFIFGYQVSVLNTIKNFIVVEFEWCKGEKDRLNCSNNTIQSSFL   80 (504)
+Confidence            554443333222   2222333344556666667777888998888888888888888776            5689999
+
+
+Q P96710           66 ISSIMIGGVVGVGISGFLSDRFGRRKILMTAALLFAISAIVSALSQDVSTLIIARIIGGLGIGMGSSLSVTYITEAAPPA  145 (464)
+Q Consensus        66 ~~~~~~~~~~~~~~~g~l~dr~g~r~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~g~~~~~~~~~~~~~~~~~~~~~  145 (464)
+                      .++..++.+++.++.|++.|+ |||+.+..+.++..++.++..++++++.+++.|++.|++.+...+...+++.|+.|++
+T Consensus        81 ~~~~~~~~~~~~~~~g~~~~~-grr~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~g~~~~~~~~~~~~~~~~~~~~~  159 (504)
+T O97467           81 LASVFIGAVLGCGFSGYLVQF-GRRLSLLIIYNFFFLVSILTSITHHFHTILFARLLSGFGIGLVTVSVPMYISEMTHKD  159 (504)
+Confidence            999999999999999999987 9999999999999999999989999999999999999999999999999999999999
+
+
+Q P96710          146 IRGSLSSLYQLFTILGISATYFINLAVQRSGTYEWG------VHTGWRWMLAYGMVPSVIFFLVL--LVVPESPRWLAKA  217 (464)
+Q Consensus       146 ~~~~~~~~~~~~~~~g~~~~~~~~~~l~~~~~~~~~------~~~~w~~~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~  217 (464)
+                      +|+++.++......+|..+++.+++.+.+..+....      ...+||+.+.+.++..++..+..  .+.||+|++...+
+T Consensus       160 ~r~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p~~~~~~  239 (504)
+T O97467          160 KKGAYGVMHQLFITFGIFVAVMLGLAMGEGPKADSTEPLTSFAKLWWRLMFLFPSVISLIGILALVVFFKEETPYFLFEK  239 (504)
+Confidence            999999999999999999999999888764322110      13369999988877766654443  3357776654444
+
+
+Q P96710          218 GKTNEALKILTRINGETVAKEELKNIENSLK-----IEQMGSLSQLFKPGL-RKALVIGILLALFNQVIGMNAITYYGPE  291 (464)
+Q Consensus       218 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-----~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~~  291 (464)
+                      ++.++..+..++....++.+.+..+.++..+     ++......+.++++. .+..+.......+..........++.+.
+T Consensus       240 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  319 (504)
+T O97467          240 GRIEESKNILKKIYETDNVDEPLNAIKEAVEQNESAKKNSLSLLSALKIPSYRYVIILGCLLSGLQQFTGINVLVSNSNE  319 (504)
+Confidence            3333332222211111110000000000000     001112223333332 2223333333333333333334444444
+
+
+Q P96710          292 IFKMMGFGQNAGFVTTCIVGVVEVIFTVIAVLLIDKVGRKKLMSIGSAFMAIFMILIGTSFYFEL---TSGIMMIVLILG  368 (464)
+Q Consensus       292 ~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~l~dr~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---~~~~~~~~~~~~  368 (464)
+                      ..++. .+............+..+++.++.+++.||+|||+.+..+.....++...+........   ............
+T Consensus       320 ~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~l~dr~g~r~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  398 (504)
+T O97467          320 LYKEF-LDSHLITILSVVMTAVNFLMTFPAIYIVEKLGRKTLLLWGCVGVLVAYLPTAIANEINRNSNFVKILSIVATFV  398 (504)
+Confidence            43333 45566666677777888888888999999999999888777776666655444332110   001122233333
+
+
+Q P96710          369 FVAAFCVSVGPITWIMISEIFPNHLRARAAGIATIFLWGANWAIGQFVPMMIDSFGLAYTFWIFAVINILCFLFVVTICP  448 (464)
+Q Consensus       369 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g~~~~~~~~g~~~~~~~~g~l~~~~g~~~~~~~~~~~~~~~~~~~~~~~~  448 (464)
+                      ..+.......+....+..+.+|++.|+++.|+.+....++..+++.+.+.+.+. +....+.+.+++..+..++.+++.+
+T Consensus       399 ~~~~~~~~~~~~~~~~~~~~~p~~~r~~~~~~~~~~~~~~~~~~~~~~~~l~~~-~~~~~~~~~~~~~~~~~~~~~~~~~  477 (504)
+T O97467          399 MIISFAVSYGPVLWIYLHEMFPSEIKDSAASLASLVNWVCAIIVVFPSDIIIKK-SPSILFIVFSVMSILTFFFIFFFIK  477 (504)
+Confidence            333444445566777889999999999999999999999999999999988875 5566666666666666665555555
+
+
+Q P96710          449 ETKNKSLEEIEKLWIK  464 (464)
+Q Consensus       449 ~~~~~~~~~~~~~~~~  464 (464)
+                      +.++++.++.++..++
+T Consensus       478 ~~~~~~~~~~~~~~~~  493 (504)
+T O97467          478 ETKGGEIGTSPYITME  493 (504)
+Confidence            5444332221111111
+
+

@@ -1,0 +1,71 @@
+Query         P14672
+Match_columns 509
+No_of_seqs    818 out of 2960
+Neff          12.4505
+Searched_HMMs 1
+Date          Tue Apr 27 14:28:21 2021
+Command       hhalign -i /Users/charlotte/TM/TM_helices/hhalign/a3m/P14672.a3m -t /Users/charlotte/TM/TM_helices/hhalign/ref_seqs/A0A0H2VG78.a3m -glob -o /Users/charlotte/TM/TM_helices/hhalign/atab_A0A0H2VG78/P14672.hhr -atab /Users/charlotte/TM/TM_helices/hhalign/atab_A0A0H2VG78/P14672.atab 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 A0A0H2VG78                     100.0 6.3E-47 6.3E-47  256.3   0.0  443   20-499     1-446 (446)
+
+No 1
+>A0A0H2VG78
+Probab=100.00  E-value=6.3e-47  Score=256.30  Aligned_cols=443  Identities=30%  Similarity=0.532  Sum_probs=50.0  Template_Neff=12.818
+
+Q P14672           20 VTGTLVLAVFSAVLGSLQFGYNIGVINAPQKVIEQSYNETWLGRQGPEGPSSIPPGTLTTLWALSVAIFSVGGMISSFLI   99 (509)
+Q Consensus        20 ~~~~~~~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~s~~~~~~~~~~~~~   99 (509)
+                      .+++++......++..+..+++....+...+.+.++++                  .+..+.+++.+++.++..++.++.
+T Consensus         1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------------------~~~~~~~~~~~~~~~~~~~~~~~~   62 (446)
+T A0A0H2VG78        1 MKANKYLIFILGALGGLLYGYDNGVISGALLFIHKDIP------------------LNSTTEGIVVSSMLIGAIVGAGSS   62 (446)
+Confidence            00000000000001111111111111111111111111                  001111111111111111111111
+
+
+Q P14672          100 GIISQWLGRKRAMLVNNVLAVLGGSLMGLANAAASYEMLILGRFLIGAYSGLTSGLVPMYVGEIAPTHLRGALGTLNQLA  179 (509)
+Q Consensus       100 g~l~dr~grr~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~l~G~~~~~~~~~~~~~~~~~~~~~~r~~~~~~~~~~  179 (509)
+                      |+++||+|||+++.++.++..++.++..+..   +++.+++.|++.|++.+...+...+++.|+.|+++|+++.++....
+T Consensus        63 g~l~dr~g~r~~~~~~~~~~~~~~~~~~~~~---~~~~~~~~~~l~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  139 (446)
+T A0A0H2VG78       63 GPLADKLGRRRLVMLIAIVFIIGALILAAST---NLALLIIGRLIIGLAVGGSMSTVPVYLSEMAPTEYRGSLGSLNQLM  139 (446)
+Confidence            1111111111111111111111111111111   1111111111111111111111111111111111111111111111
+
+
+Q P14672          180 IVIGILIAQVLGLESLLGTASLWPLLLGLTVLPALLQLVLLPFCPESPRYLYIIQNLEGPARKSLKRLTGWADVSGVLAE  259 (509)
+Q Consensus       180 ~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~esp~~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  259 (509)
+                      ..+|.++++.++..  ......|+..+.+..+..++..+...+.||+|++... ++++++.++..+......+.+.   +
+T Consensus       140 ~~~g~~~~~~~~~~--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~~~~~~~~---~  213 (446)
+T A0A0H2VG78      140 ITIGILAAYLVNYA--FADIEGWRWMLGLAVVPSVILLVGIYFMPESPRWLLE-NRNEEAARQVMKITYDDSEIDK---E  213 (446)
+Confidence            11111111111100  0000011111111111111111111111111111000 0000000000000000000000   0
+
+
+Q P14672          260 LKDEKRKLERERPLSLLQLLGSRTHRQPLIIAVVLQLSQQLSGINAVFYYSTSIFETAGVG--QPAYATIGAGVVNTVFT  337 (509)
+Q Consensus       260 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~~  337 (509)
+                      .++  .+..........+.++++..++..+..................++.+.+..+.+.+  ..........+..+++.
+T Consensus       214 ~~~--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  291 (446)
+T A0A0H2VG78      214 LKE--MKEINAISESTWTVIKSPWLGRILIVGCIFAIFQQFIGINAVIFYSSSIFAKAGLGEAASILGSVGIGTINVLVT  291 (446)
+Confidence            000  00000000000000000000000000000000000000000000000000000000  00000001111111111
+
+
+Q P14672          338 LVSVLLVERAGRRTLHLLGLAGMCGCAILMTVALLLLERVPAMSYVSIVAIFGFVAFFEIGPGPIPWFIVAELFSQGPRP  417 (509)
+Q Consensus       338 ~~~g~l~dr~grr~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p~~~r~  417 (509)
+                      ++.+++.||++||+.+..+.....++.+............. ..+..................+....+..+.+|++.|+
+T Consensus       292 ~~~~~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  370 (446)
+T A0A0H2VG78      292 IVAIFVVDKIDRKKLLVGGNIGMIASLLIMAILIWTIGIAS-SAWIIIVCLSLFIVFFGISWGPVLWVMLPELFPMRARG  370 (446)
+Confidence            11111111111111111111000000000000000000000 00000000000000000000011111111111111111
+
+
+Q P14672          418 AAMAVAGFSNWTSNFIIGMGFQYVAEAMGPY-VFLLFAVLLLGFFIFTFLRVPETRGRTFDQISAAFHRTPSLLEQEVKP  496 (509)
+Q Consensus       418 ~~~~~~~~~~~~g~~~~~~~~~~l~~~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  496 (509)
+                      ++.++......+|..+++.+.+.+.+..++. .+...+++.++..+..+...++.++++.++.++..+++      +.++
+T Consensus       371 ~~~~~~~~~~~~g~~~~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------~~~~  444 (446)
+T A0A0H2VG78      371 AATGISALVLNIGTLIVSLFFPILSDALSTEWVFLIFAFIGVLAMIFVIKFLPETRGRSLEEIEYELRER------TGAR  444 (446)
+Confidence            1111111111111111111111111111111 00000000000000000000000000000000000000      0000
+
+
+Q P14672          497 STE  499 (509)
+Q Consensus       497 ~~~  499 (509)
+                       ++
+T Consensus       445 -~~  446 (446)
+T A0A0H2VG78      445 -TE  446 (446)
+Confidence             00
+
+

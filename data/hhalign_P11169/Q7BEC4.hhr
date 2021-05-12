@@ -1,0 +1,63 @@
+Query         Q7BEC4
+Match_columns 472
+No_of_seqs    788 out of 2391
+Neff          12.7359
+Searched_HMMs 1
+Date          Tue Apr 27 14:27:06 2021
+Command       hhalign -i /Users/charlotte/TM/TM_helices/hhalign/a3m/Q7BEC4.a3m -t /Users/charlotte/TM/TM_helices/hhalign/ref_seqs/P11169.a3m -glob -o /Users/charlotte/TM/TM_helices/hhalign/atab_P11169/Q7BEC4.hhr -atab /Users/charlotte/TM/TM_helices/hhalign/atab_P11169/Q7BEC4.atab 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 A3M#                           100.0 9.7E-55 9.7E-55  299.1   0.0  441   14-472     1-462 (496)
+
+No 1
+>A3M#
+Probab=100.00  E-value=9.7e-55  Score=299.12  Aligned_cols=441  Identities=29%  Similarity=0.501  Sum_probs=347.8  Template_Neff=5.700
+
+Q Q7BEC4           14 TAHPDHLGHVIFIAAAAAMGGFLFGYDSSVINGAVEAIRDRYDV----------GSA----VLAQVIAVALIGCAIGAAT   79 (472)
+Q Consensus        14 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~----------~~~----~~~~~~~~~~~~~~~~~~~   79 (472)
+                      ..+.+..+......+..++..+.+++..+..+.-.+.+++.++.          ++.    ..++..+++.+|.++|++.
+T Consensus         1 ~~~~~~t~~L~~~~~~a~lGsfqfGY~~gviN~p~~~i~~~~~~~~~~~~~~~~~~~~~~~~ws~~vsif~iGg~iG~l~   80 (496)
+T P11169            1 MGTQKVTPALIFAITVATIGSFQFGYNTGVINAPEKIIKEFINKTLTDKGNAPPSEVLLTSLWSLSVAIFSVGGMIGSFS   80 (496)
+Confidence            11222223334444444555888888888888777767665542          222    3578899999999999999
+
+
+Q Q7BEC4           80 AGRIADRIGRIRCMQIAAVLFTVSAVGSALP---FALWDLAMWRIIGGFAIGMASVIGPAYIAEVSPPAYRGRLGSFQQA  156 (472)
+Q Consensus        80 ~g~l~d~~g~~~~~~~~~~~~~~~~~~~~~~---~~~~~~~~~~~l~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  156 (472)
+                      .|+++||+|||+.+++..++..++.+++.++   .+++.+++.|++.|++.|......+.|++|+.|++.||..-+..+.
+T Consensus        81 ~G~ladr~GRk~~ll~~nil~i~ga~lm~~s~~a~s~emlivGR~l~Gi~~Gl~s~~vPmYl~EIsP~~lRGalg~l~QL  160 (496)
+T P11169           81 VGLFVNRFGRRNSMLIVNLLAVTGGCFMGLCKVAKSVEMLILGRLVIGLFCGLCTGFVPMYIGEISPTALRGAFGTLNQL  160 (496)
+Confidence            9999999999999999999999999999875   6999999999999999999999999999999999999999999999
+
+
+Q Q7BEC4          157 AIVIGIAVSQLVNWGLLNAAGGDQRGELMGLEAWQVMLGVMVIPAVLYGLLSFAIPESPRFLI-SVGKRERAKKILEEVE  235 (472)
+Q Consensus       157 ~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~~  235 (472)
+                      ...+|..++..++....  .+        ....|++.+.+.+++.++..+...++||+|+|+. ++++++++++..++.+
+T Consensus       161 ~itiGIl~aqilgl~~i--lg--------~~~~Wp~ll~~~~iPallql~~Lpf~PESPRyLli~kg~ee~A~kaL~rLr  230 (496)
+T P11169          161 GIVVGILVAQIFGLEFI--LG--------SEELWPLLLGFTILPAILQSAALPFCPESPRFLLINRKEEENAKQILQRLW  230 (496)
+Confidence            99999988888754321  11        1223999999999999999888899999999988 7788888888877776
+
+
+Q Q7BEC4          236 GKDVDFDARVTEIE---HAMHREEKSSFKDLLGGSFFFKPIVWIGIGLSVFQQFVGINVAFYYSSTLWQSVGVDPADSFF  312 (472)
+Q Consensus       236 ~~~~~~~~~~~~~~---~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g~~~~~~~~  312 (472)
+                      ++++ .+++.++.+   +..+++++.+.++.++.+..+ +.+...+......++.+.+...+|...+++..|.++..  +
+T Consensus       231 G~~d-v~~el~ei~~e~~~~~~~~~~s~~~lf~~~~lR-~~Lii~i~l~~~QQlSGINAv~yYSt~IF~~aG~~~~~--y  306 (496)
+T P11169          231 GTQD-VSQDIQEMKDESARMSQEKQVTVLELFRVSSYR-QPIIISIVLQLSQQLSGINAVFYYSTGIFKDAGVQEPI--Y  306 (496)
+Confidence            6432 222222111   112233455666777665554 44555677788888889998889999999988888755  6
+
+
+Q Q7BEC4          313 YSFTTSIINIVGTVIAMIFVDRVGRKPLALIGSVGMVIGLALEAWAFSFDLVDGKLPATQGWVALIAAHVFVLFFALSWG  392 (472)
+Q Consensus       313 ~~~~~~~~~~~~~~~~~~l~~r~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  392 (472)
+                      .....++.+++..++..++.||.|||++++.+...+.++.+++.....+..    .....++...+....+...+..+..
+T Consensus       307 atig~G~vnv~~T~vs~~Lvdr~GRR~LlL~g~~gm~i~~~llti~l~l~~----~~~~~~y~si~~i~~fv~~FaiGpG  382 (496)
+T P11169          307 ATIGAGVVNTIFTVVSLFLVERAGRRTLHMIGLGGMAFCSTLMTVSLLLKD----NYNGMSFVCIGAILVFVAFFEIGPG  382 (496)
+Confidence            666778889999999999999999999999999999988888776554321    1112233445555666677778888
+
+
+Q Q7BEC4          393 VVVWVFLGEMFPNRIRAAALGVAASAQWIANWAITASFPSLADWNLSGTYVIYTIFAALSIPFVLKFVKETKGKALEEMG  472 (472)
+Q Consensus       393 ~~~~~~~~~~~~~~~~~~~~g~~~~~~~~g~~~~~~~~~~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  472 (472)
+                      +..+.+.+|++|++.|+.++++....++++.++-......+.+.-....|+++++++++..++.+++.||+|+|..+|++
+T Consensus       383 pIPw~i~sElF~q~~R~~A~sia~~~NW~~nfiVg~~Fp~l~~~lg~y~FliF~~~~~~~~iFvy~~vPETKGkt~eEI~  462 (496)
+T P11169          383 PIPWFIVAELFSQGPRPAAMAVAGCSNWTSNFLVGLLFPSAAHYLGAYVFIIFTGFLITFLAFTFFKVPETRGRTFEDIT  462 (496)
+Confidence            99999999999999999999999999999999999999999883336799999999999999999999999999999887
+
+

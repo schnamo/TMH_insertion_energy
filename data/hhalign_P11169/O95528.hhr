@@ -1,0 +1,79 @@
+Query         O95528
+Match_columns 541
+No_of_seqs    265 out of 2334
+Neff          8.94642
+Searched_HMMs 1
+Date          Tue Apr 27 14:24:45 2021
+Command       hhalign -i /Users/charlotte/TM/TM_helices/hhalign/a3m/O95528.a3m -t /Users/charlotte/TM/TM_helices/hhalign/ref_seqs/P11169.a3m -glob -o /Users/charlotte/TM/TM_helices/hhalign/atab_P11169/O95528.hhr -atab /Users/charlotte/TM/TM_helices/hhalign/atab_P11169/O95528.atab 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 A3M#                           100.0 8.9E-65 8.9E-65  354.2   0.0  453    1-541     3-496 (496)
+
+No 1
+>A3M#
+Probab=100.00  E-value=8.9e-65  Score=354.16  Aligned_cols=453  Identities=25%  Similarity=0.446  Sum_probs=209.7  Template_Neff=5.700
+
+Q O95528            1 MGHSPPVLPLCASVSLLGGLTFGYELAVISGALLPLQLDFGLS----------C----LEQEFLVGSLLLGALLASLVGG   66 (541)
+Q Consensus         1 ~~~~~~~~~~l~~~~~~~~~~~g~~~~~~~~~l~~i~~~~g~s----------~----~~~g~~~s~~~~g~~v~~~~~G   66 (541)
+                      +.+.-+...+..++..++.+.+||+.++++.....+++.++.+          +    ...++..+++.+|.++|++.+|
+T Consensus         3 ~~~~t~~L~~~~~~a~lGsfqfGY~~gviN~p~~~i~~~~~~~~~~~~~~~~~~~~~~~~ws~~vsif~iGg~iG~l~~G   82 (496)
+T P11169            3 TQKVTPALIFAITVATIGSFQFGYNTGVINAPEKIIKEFINKTLTDKGNAPPSEVLLTSLWSLSVAIFSVGGMIGSFSVG   82 (496)
+Confidence            2222222233333333445555555555555444444433321          1    1234555555555555555555
+
+
+Q O95528           67 FLIDCYGRKQAILGSNLVLLAGSLTLGLA---GSLAWLVLGRAVVGFAISLSSMACCIYVSELVGPRQRGVLVSLYEAGI  143 (541)
+Q Consensus        67 ~l~Dr~Grr~~l~~~~~~~~~~~l~~~~~---~s~~~l~~~~~l~Gi~~g~~~~~~~~~i~e~~~~~~rg~~~g~~~~~~  143 (541)
+                      +++||+|||+.+++..++..++.++++++   .|+++++++|++.|++.|......+.|++|+.|++.||...++.+...
+T Consensus        83 ~ladr~GRk~~ll~~nil~i~ga~lm~~s~~a~s~emlivGR~l~Gi~~Gl~s~~vPmYl~EIsP~~lRGalg~l~QL~i  162 (496)
+T P11169           83 LFVNRFGRRNSMLIVNLLAVTGGCFMGLCKVAKSVEMLILGRLVIGLFCGLCTGFVPMYIGEISPTALRGAFGTLNQLGI  162 (496)
+Confidence            55555555555555555555555555543   455555555555555555555555555555555555555555555555
+
+
+Q O95528          144 TVGILLSYALNYA-LAGTPWGWRHMFGWATAPAVLQSLSLLFLPAGTDETA--------THKDLIPLQGG----------  204 (541)
+Q Consensus       144 ~lG~i~~~~l~~~-l~~~~~gwr~~f~i~~~~~ll~~i~~~~~~~~~~~~~--------~~~~~~~~~~~----------  204 (541)
+                      .+|..++..++.. +.....+||+.+.+.++++++.++.+.++||+++.--        .++..++.+..          
+T Consensus       163 tiGIl~aqilgl~~ilg~~~~Wp~ll~~~~iPallql~~Lpf~PESPRyLli~kg~ee~A~kaL~rLrG~~dv~~el~ei  242 (496)
+T P11169          163 VVGILVAQIFGLEFILGSEELWPLLLGFTILPAILQSAALPFCPESPRFLLINRKEEENAKQILQRLWGTQDVSQDIQEM  242 (496)
+Confidence            5555555544321 1122234555555555555555555555554432110        00000000000          
+
+
+Q O95528          205 -EAPKLGPGRPRYSFLDLFRARDNMRGRTTVGLGLVLFQQLTGQPNVLCYASTIFSSVGFHGGSSAVLASVGLGAVKVAA  283 (541)
+Q Consensus       205 -~~~~~~~~~~~~~~~~l~~~~~~~~~~~~~~l~~~~~~~~~~~~~~~~~~~~~l~~~~~~~~~~~~~~~~~~~i~~~~~  283 (541)
+                       ++.+..+..++.++.++++.+ ..|++....+.+...+++.+...++.|...++++.+.+...   +.+...++++++.
+T Consensus       243 ~~e~~~~~~~~~~s~~~lf~~~-~lR~~Lii~i~l~~~QQlSGINAv~yYSt~IF~~aG~~~~~---yatig~G~vnv~~  318 (496)
+T P11169          243 KDESARMSQEKQVTVLELFRVS-SYRQPIIISIVLQLSQQLSGINAVFYYSTGIFKDAGVQEPI---YATIGAGVVNTIF  318 (496)
+Confidence             000000111223334444332 23344444455555555555555555555555555444322   4444445555555
+
+
+Q O95528          284 TLTAMGLVDRAGRRALLLAGCALMALSVSGIGLVSFAVPMDSGPSCLAVPNATGQTGLPGDSGLLQDSSLPPIPRTNEDQ  363 (541)
+Q Consensus       284 ~~i~g~l~dr~grr~ll~~~~~l~~l~~l~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  363 (541)
+                      ++++.++.||.|||+++..+...++++++++.+.....+                                         
+T Consensus       319 T~vs~~Lvdr~GRR~LlL~g~~gm~i~~~llti~l~l~~-----------------------------------------  357 (496)
+T P11169          319 TVVSLFLVERAGRRTLHMIGLGGMAFCSTLMTVSLLLKD-----------------------------------------  357 (496)
+Confidence            555555555555555555555555555544443322100                                         
+
+
+Q O95528          364 REPILSTAKKTKPHPRSGDPSAPPRLALSSALPGPPLPARGHALLRWTALLCLMVFVSAFSFGFGPVTWLVLSEIYPVEI  443 (541)
+Q Consensus       364 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p~~~  443 (541)
+                                                              ...+.+|....+.+.++.+|..+.+++.|.+.+|+||.+.
+T Consensus       358 ----------------------------------------~~~~~~y~si~~i~~fv~~FaiGpGpIPw~i~sElF~q~~  397 (496)
+T P11169          358 ----------------------------------------NYNGMSFVCIGAILVFVAFFEIGPGPIPWFIVAELFSQGP  397 (496)
+Confidence                                                    0122344445555555555555555555555555555555
+
+
+Q O95528          444 RGRAFAFCNSFNWAANLFISLSFLDLIGTIGLSWTFLLYGLTAVLGLGFIYLFVPETKGQSLAEIDQQFQKRRFTLSFGH  523 (541)
+Q Consensus       444 r~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  523 (541)
+                      |+.++++....+|+.+++....+..+.+..| ..+|+++++++++..++.|+++||||+++.+|+++.+++++...+..+
+T Consensus       398 R~~A~sia~~~NW~~nfiVg~~Fp~l~~~lg-~y~FliF~~~~~~~~iFvy~~vPETKGkt~eEI~~~f~~~~~~~~~~~  476 (496)
+T P11169          398 RPAAMAVAGCSNWTSNFLVGLLFPSAAHYLG-AYVFIIFTGFLITFLAFTFFKVPETRGRTFEDITRAFEGQAHGADRSG  476 (496)
+Confidence            5555555555555555555555555555555 335555555555555555555555555555555555544442211111
+
+
+Q O95528          524 RQNS----TGIPYSRIEISAAS  541 (541)
+Q Consensus       524 ~~~~----~~~~~~~~~~~~~~  541 (541)
+                      .+..    +-.|.+...  ++.
+T Consensus       477 ~~~~~~~~~~~~~~~~~--~~~  496 (496)
+T P11169          477 KDGVMEMNSIEPAKETT--TNV  496 (496)
+Confidence            1100    001111100  011
+
+

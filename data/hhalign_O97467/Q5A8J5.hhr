@@ -1,0 +1,71 @@
+Query         Q5A8J5
+Match_columns 546
+No_of_seqs    431 out of 2979
+Neff          12.0875
+Searched_HMMs 1
+Date          Tue Apr 27 14:31:49 2021
+Command       hhalign -i /Users/charlotte/TM/TM_helices/hhalign/a3m/Q5A8J5.a3m -t /Users/charlotte/TM/TM_helices/hhalign/ref_seqs/O97467.a3m -glob -o /Users/charlotte/TM/TM_helices/hhalign/atab_O97467/Q5A8J5.hhr -atab /Users/charlotte/TM/TM_helices/hhalign/atab_O97467/Q5A8J5.atab 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 O97467                         100.0 2.3E-51 2.3E-51  280.6   0.0  479    1-506     1-504 (504)
+
+No 1
+>O97467
+Probab=100.00  E-value=2.3e-51  Score=280.57  Aligned_cols=479  Identities=21%  Similarity=0.328  Sum_probs=73.9  Template_Neff=12.952
+
+Q Q5A8J5            1 MGGFIDNIFKRTTT---AGLTGRKLRAAVTITATLGFSLFGYDQGLMAGLISAEQFNWEFPAT-------KDNSVIQGAV   70 (546)
+Q Consensus         1 ~~~~~~~~~~~~~~---~~~~~~~~~~~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~~~~~~~-------~~~~~~~~~~   70 (546)
+                      |.....+.......   .+.+.++..+...++..++.+.+|++.+..+........+.++...       +.+..+.+++
+T Consensus         1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   80 (504)
+T O97467            1 MTKSSKDICSENEGKKNGKSGFFSTSFKYVLSACIASFIFGYQVSVLNTIKNFIVVEFEWCKGEKDRLNCSNNTIQSSFL   80 (504)
+Confidence            00000000000000   0000001111111112222222222222211111110000000000       0001112222
+
+
+Q Q5A8J5           71 TASYELGCFFGAIFALLRGDALGRKPIIFFGATIIILGTIISVTPFRPHWPLGQFVVGRVITGIGNGMNTATIPVWQSEM  150 (546)
+Q Consensus        71 ~~~~~~g~~~g~~~~g~l~d~~grr~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~r~l~G~~~g~~~~~~~~~~~e~  150 (546)
+                      .++..+|.++|.+++|+++|+ |||+.++++.++..++.++..+..+    ++.++++|++.|++.|...+...+++.|+
+T Consensus        81 ~~~~~~~~~~~~~~~g~~~~~-grr~~~~~~~~~~~~~~~~~~~~~~----~~~~~~~~~l~g~~~~~~~~~~~~~~~~~  155 (504)
+T O97467           81 LASVFIGAVLGCGFSGYLVQF-GRRLSLLIIYNFFFLVSILTSITHH----FHTILFARLLSGFGIGLVTVSVPMYISEM  155 (504)
+Confidence            222222222222222222221 2222222222222222211111100    11122222222222222222222222222
+
+
+Q Q5A8J5          151 SKPENRGKLVNLEGAVVAFGTFIAYWLDFGLSYVDS-----------SVSWRFPVAFQIFFALWVIFG--IIQLPESPRW  217 (546)
+Q Consensus       151 ~~~~~r~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~-----------~~~w~~~~~~~~~~~~~~~~~--~~~~pesp~~  217 (546)
+                      .|+++|+++.++.+....+|.++++.++..+.....           ..+||+.+.+..++.++..+.  .++.||+|+|
+T Consensus       156 ~~~~~r~~~~~~~~~~~~~g~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p~~  235 (504)
+T O97467          156 THKDKKGAYGVMHQLFITFGIFVAVMLGLAMGEGPKADSTEPLTSFAKLWWRLMFLFPSVISLIGILALVVFFKEETPYF  235 (504)
+Confidence            222222222222222222222222221111100000           001222222222211111100  0111222222
+
+
+Q Q5A8J5          218 LISKDRKPEAFEVLAALNDTTPDDDAIVAEASVIIDAVRRNAKVQAGFKDLFTGGKTAHFQRMLIGSSTQFFQQFTGCNA  297 (546)
+Q Consensus       218 l~~~~~~~~a~~~l~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  297 (546)
+                      +.++++.+++++.+++....+..+.+.. +........+++.+......+.++.  ....+..+.......+..+.+...
+T Consensus       236 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~~~~~~~~~  312 (504)
+T O97467          236 LFEKGRIEESKNILKKIYETDNVDEPLN-AIKEAVEQNESAKKNSLSLLSALKI--PSYRYVIILGCLLSGLQQFTGINV  312 (504)
+Confidence            2222222222222211111110000000 0000000000000000000000000  000000000000000000000000
+
+
+Q Q5A8J5          298 AIYYSTLLFYETVFHHTKYRLSMILGGVFATIYALATLPSFFLIDTLGRRNLFLIGAIGQGISFLISFACLINPTE--QN  375 (546)
+Q Consensus       298 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~i~~~~~~~l~dr~grr~~l~~~~~~~~~~~~~~~~~~~~~~~--~~  375 (546)
+                      ...+........    .+.........+..+...++.++.+++.||+|||+.+..+..+.+++.+...........  ..
+T Consensus       313 ~~~~~~~~~~~~----~~~~~~~~~~~~~~~~~~~~~~~~~~l~dr~g~r~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  388 (504)
+T O97467          313 LVSNSNELYKEF----LDSHLITILSVVMTAVNFLMTFPAIYIVEKLGRKTLLLWGCVGVLVAYLPTAIANEINRNSNFV  388 (504)
+Confidence            000000000000    000000001111111111222222222222222222222211111111111000000000  00
+
+
+Q Q5A8J5          376 AKGAAVGIYLFIVFFAFTILPLPWIYPPEINPLRTRTTASAVSTCTNWLTNFAVVMFTPPFISASGWGCYLYFAVMNFLF  455 (546)
+Q Consensus       376 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~e~~p~~~r~~~~~~~~~~~~~~~~~~~~~~~~l~~~~~~~~~~~~~~~~~~~  455 (546)
+                      ..............+.....+..+.+..|++|++.|+++.++......++..+++.+.+.+.+......++++++++++.
+T Consensus       389 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p~~~r~~~~~~~~~~~~~~~~~~~~~~~~l~~~~~~~~~~~~~~~~~~~  468 (504)
+T O97467          389 KILSIVATFVMIISFAVSYGPVLWIYLHEMFPSEIKDSAASLASLVNWVCAIIVVFPSDIIIKKSPSILFIVFSVMSILT  468 (504)
+Confidence            00000000011111111111111122222222222222222222222222222222222211111111111111111111
+
+
+Q Q5A8J5          456 VPIIFFFYPETAGRSLEEIDIIFAKAYVEKRQPWRVAATLPKLSLQEVEDE  506 (546)
+Q Consensus       456 ~~~~~~~l~et~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  506 (546)
+                      .++.++++||++++..++.++...+...    +.+.+           +..
+T Consensus       469 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~----~~~~~-----------~~~  504 (504)
+T O97467          469 FFFIFFFIKETKGGEIGTSPYITMEERQ----KHMTK-----------SVV  504 (504)
+Confidence            1111112222211111100000000000    00000           000
+
+

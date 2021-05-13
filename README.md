@@ -2,15 +2,13 @@
 Inferring TMH insertion energies from reference sequences with known helix positions
 
 ## Data
-| Folder | Description | 
+| Folder/ File | Description | 
 | ------------------------------------------------------ |------------------------------------------------------------------------------------------------------------------------|
 | `reference_sequences` | Reference sequences and corresponding HHM-profiles |
 | `sequences` | Sequences in fasta format |
 | `profiles` | HHM-profiles created with hhblits against the UniRef30 database |
 | `hhalign_X` | HMM-HMM alignment of every profile against reference profile X |
 | `dgpred_results` | Inferred helices and corresponding dgpred energy calculations |
-
-| File | Description | 
 | ------------------------------------------------------ |------------------------------------------------------------------------------------------------------------------------|
 | `sequences.fasta` | All sequences in one fasta file |
 | `TMH_insertion_energies.xlsx` | Energy values and sequences for 19 residue window and full length helices |

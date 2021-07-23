@@ -55,13 +55,20 @@ def main():
 
     in_fasta = sys.argv[1] # list of curated sequences in one fasta file
     dir = sys.argv[2] # directory in which to store result files
-    hhblits_folder = sys.argv[3] # folder with pairwise alignments
+    pw_ali_folder = sys.argv[3] # folder with pairwise alignments from either hhblits or TM-align
+    tm_align = sys.argv[4] # if 1 then it's alignments from TM-align, if 0 alignments from hhblits
     final = dir
     dir += 'dgpred_results/'
 
-    if not os.path.exists(dir):
-        os.mkdir(dir)
+    # if not os.path.exists(dir):
+    #     os.mkdir(dir)
 
+    center_found = 0
+    next_to_it = 0
+    center_via_start_end = 0
+    center_via_start  = 0
+    center_via_end = 0
+    total = 0
     # read in sequences in fasta format
     seqs, names, species = read_fasta(in_fasta)
     energies = []
@@ -70,11 +77,12 @@ def main():
     for i in range(0, len(seqs)):
         seq = ''.join(seqs[i])
         # set reference with the highest alignment score
-        set_reference(hhblits_folder, names[i])
+        set_reference(pw_ali_folder, names[i], tm_align)
         #  infer helix positions based on reference
-        coords_seq, coords_ref = get_coords_hhblits(hhblits_folder, names[i])
-        center_seq_list, start_seq_list, end_seq_list = get_seq_coords_hhblits(seq, names[i], coords_seq, coords_ref)
+        coords_seq, coords_ref = get_coords_hhblits(pw_ali_folder, names[i])
+        center_seq_list, start_seq_list, end_seq_list, center_found, next_to_it, center_via_start_end, center_via_start, center_via_end, total = get_seq_coords_hhblits(seq, names[i], coords_seq, coords_ref, center_found, next_to_it, center_via_start_end, center_via_start, center_via_end, total)
         adjusted_center_seq_list = check_minimum_neighours(seq, names[i], center_seq_list, start_seq_list, end_seq_list)
+        # print(names[i], ',', adjusted_center_seq_list[6] + 10)
         TM_new_full, TM_new_19 = get_helices_hhblits(seq, names[i], adjusted_center_seq_list, start_seq_list, end_seq_list, dir)
         # calculate insertion energies for inferred helices
         dgpred(dir, names[i], 'full')
@@ -85,7 +93,12 @@ def main():
         energies.append(helix_info)
 
     output_results(in_fasta, final, energies)
-
+    print("found: ", center_found)
+    print("total: ", total)
+    print("next to it : ", next_to_it)
+    print("start and end: ", center_via_start_end)
+    print("start only : ", center_via_start)
+    print("end only : ", center_via_end)
 
 def check_minimum_neighours(seq, id, center_seq_list, start_seq_list, end_seq_list):
 
@@ -148,7 +161,7 @@ def check_minimum_neighours(seq, id, center_seq_list, start_seq_list, end_seq_li
     return adjusted_center_seq_list
 
 
-def set_reference(dir, id):
+def set_reference(dir, id, tm_align):
 
     global ref_id
     global ref_seq
@@ -160,23 +173,41 @@ def set_reference(dir, id):
     max_ref = ''
 
     for ref in references:
-        # todo: use the same as reference
         if ref['id'] != id:
-            ali =  dir + 'hhalign_' + ref['id'] + '/' + id + '.hhr'
-            counter = 0
+            if tm_align == "1":
+                # check original tm align result file for score
+                ali = dir + ref['id'] + '/' + id + '.a3m_ali.txt'
+                counter = 0
 
-            with open(ali) as input:
-                for line in input:
-                    line = line.strip()
-                    counter += 1
-                    if counter == 10:
-                        ali_score = line.split()[5]
-                        if float(ali_score) > max_score:
-                            max_score = float(ali_score)
-                            max_ref = ref['id']
-                            max_center  = ref['center']
-                            max_start = ref['start']
-                            max_end = ref['end']
+                with open(ali) as input:
+                    for line in input:
+                        line = line.strip()
+                        if 'TM-score=' in line:
+                            ali_score = line.split('= ')[1].split(' ')[0]
+                            if float(ali_score) > max_score:
+                                max_score = float(ali_score)
+                                max_ref = ref['id']
+                                max_center  = ref['center']
+                                max_start = ref['start']
+                                max_end = ref['end']
+            else:
+                # check hhblits alignments for reference sequence with highest score
+                ali =  dir + 'hhalign_' + ref['id'] + '/' + id + '.hhr'
+                counter = 0
+
+                with open(ali) as input:
+                    for line in input:
+                        line = line.strip()
+                        counter += 1
+                        if counter == 10:
+                            ali_score = line.split()[5]
+                            if float(ali_score) > max_score:
+                                max_score = float(ali_score)
+                                max_ref = ref['id']
+                                max_center  = ref['center']
+                                max_start = ref['start']
+                                max_end = ref['end']
+
     ref_id = max_ref
     ref_center =  [i - 1 for i in max_center]
     ref_start = [i - 1 for i in max_start]
@@ -226,7 +257,7 @@ def get_helices_hhblits(seq, id, center_seq_list, starts, ends, dir):
 
     return TM_full, TM_19
 
-def get_seq_coords_hhblits(seq, id, coords_seq, coords_ref):
+def get_seq_coords_hhblits(seq, id, coords_seq, coords_ref, center_found, next_to_it, center_via_start_end, center_via_start, center_via_end, total):
 
     center_seq_list = []
     start_seq_list = []
@@ -234,14 +265,19 @@ def get_seq_coords_hhblits(seq, id, coords_seq, coords_ref):
 
     for center in ref_center:
         found = 0
+        total += 1
         for i in range(0,len(coords_ref)):
             if coords_ref[i] == center:
                 found = 1
+                center_found += 1
                 center_seq = coords_seq[i]
                 center_seq_list.append(center_seq)
         if found == 0:
             # check to left and right
+            print('not found! ', id)
             pos_seq = check_neighbours(center, coords_seq,  coords_ref)
+            if pos_seq > -1:
+                next_to_it += 1
             center_seq_list.append(pos_seq)
 
     for start in ref_start:
@@ -274,12 +310,15 @@ def get_seq_coords_hhblits(seq, id, coords_seq, coords_ref):
             if start_seq_list[j] > -1 and end_seq_list[j] > -1:
                 if ((start_seq_list[j] + end_seq_list[j]) / 2)  > -1 and ((start_seq_list[j] + end_seq_list[j]) / 2) < len(seq):
                     center_seq_list[j] = (start_seq_list[j] + end_seq_list[j]) / 2
+                    center_via_start_end += 1
             elif start_seq_list[j] > -1:
                 if start_seq_list[j] + 9 < len(seq):
                     center_seq_list[j] = start_seq_list[j] + 9
+                    center_via_start += 1
             elif end_seq_list[j] > -1:
                 if end_seq_list[j] - 10 > -1:
                     center_seq_list[j] = end_seq_list[j] - 10
+                    center_via_end += 1
         if start_seq_list[j] == -1:
             if center_seq_list[j] > -1:
                 if center_seq_list[j] - 9 > -1:
@@ -289,7 +328,7 @@ def get_seq_coords_hhblits(seq, id, coords_seq, coords_ref):
                 if center_seq_list[j] + 10 < len(seq):
                     end_seq_list[j] = center_seq_list[j] + 10
 
-    return center_seq_list, start_seq_list, end_seq_list
+    return center_seq_list, start_seq_list, end_seq_list, center_found, next_to_it, center_via_start_end, center_via_start, center_via_end, total
 
 def check_neighbours(pos, coords_seq,  coords_ref):
 

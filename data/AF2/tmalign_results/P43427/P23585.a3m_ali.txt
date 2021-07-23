@@ -1,0 +1,52 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20190822)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: /Users/charlotte/TM_AF2/Predictions/P23585.a3m.pdb
+Name of Chain_2: /Users/charlotte/TM_AF2/ref_AF2/P43427.a3m.pdb    
+Length of Chain_1:  541 residues
+Length of Chain_2:  502 residues
+
+Aligned length=  474, RMSD=   3.04, Seq_ID=n_identical/n_aligned= 0.241
+TM-score= 0.80059 (if normalized by length of Chain_1)
+TM-score= 0.85902 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+MSEFATSRVESGSQQTSIHSTPIVQKLETDESPIQTKSEYT-NAELPAKPIAAYWTVICLCLMIAF-GGFVFGWDTGTISGFVNQTDFKRRFGQ-MK----SDGTYYLSDVRTGLIVGIFNIGCAFGGLTLGRLGDMYGRRIGLMCVVLVYIVGIVIQIASS--DKWYQYFIGRIISGMGVGGIAVLSPTLISETAPKHIRGTCVSFYQLMITLGIFLGYCTNYGTKDYSNSVQWRVPLGLNFAFAIFMIAGMLMVPESPRFLV-EKGRYEDAKRSLAKSNKVTIEDPSIVAEMDTIMANVETERLAGNASWGELFSNKGAILPRVIMGIMIQSLQQLTGNNYFFYYGTTIFNAVGMK--DSFQTSIVLGIVNFASTFVALYTVDKFGRRKCLLGGSASMAICFVIFSTVGVTSLYPNGKDQPSSKAAGNVMIVFTCLFIFFFAISWAPIAYVIVAESYPLRVKNRAMAIAVGANWIWGFLIGFFTPFITSAIGFSYGYVFMGCLVFSFFYVFFFVCETKGLTLEEVNEMYVEGVKPWKSGSWISK-------------EKRVSE-E--
+                                          ...::::....::::::::::::: ::::::::::::::::  ::::::::. ..    .......::::::::::::::::::::::::::::::::::::::::::::::::::::::  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:...:: :::::::::::::::::::::::::::::::: ::::::::::::::::::   : :::::::::::::::::::::::::::::.:: :::::::::::::::::::::::::::::::::::::  ::::::::::::::::::::::::::::::::::::::::::::::::::::::: .      .: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..                       ....:. .  
+-----------------------------------------MEKEDQEKTGKLTLVLALATFLAAFGSSFQYGYNVAAVNSPS--EFMQQFYNDTYYDRNKENIESFTLTLLWSLTVSMFPFGGFIGSLMVGFLVNNLGRKGALLFNNIFSILPAILMGCSKIAKSFEIIIASRLLVGICAGISSNVVPMYLGELAPKNLRGALGVVPQLFITVGILVAQLFGLRSVLASE-EGWPILLGLTGVPAGLQLLLLPFFPESPRYLLIQKKNESAAEKALQTLRGW---K-DVDMEMEEIRKEDEAEKAAGFISVWKLFRMQS-LRWQLISTIVLMAGQQLSGVNAIYYYADQIYLSAGVKSNDVQYVTAGTGAVNVFMTMVTVFVVELWGRRNLLLIGFSTCLTACIVLTVALALQN-T------IS-WMPYVSIVCVIVYVIGHAVGPSPIPALFITEIFLQSSRPSAYMIGGSVHWLSNFIVGLIFPFIQVGLGPYSFIIFAIICLLTTIYIFMVVPETKGRTFVEINQIFAKKNK----------VSDVYPEKEEKELNDLPPATREQ
+
+
+ **************************************************************************
+ *                        TM-align (Version 20190822)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: /Users/charlotte/TM_AF2/Predictions/P23585.a3m.pdb
+Name of Chain_2: /Users/charlotte/TM_AF2/ref_AF2/P43427.a3m.pdb    
+Length of Chain_1:  541 residues
+Length of Chain_2:  502 residues
+
+Aligned length=  474, RMSD=   3.04, Seq_ID=n_identical/n_aligned= 0.241
+TM-score= 0.80059 (if normalized by length of Chain_1)
+TM-score= 0.85902 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+MSEFATSRVESGSQQTSIHSTPIVQKLETDESPIQTKSEYT-NAELPAKPIAAYWTVICLCLMIAF-GGFVFGWDTGTISGFVNQTDFKRRFGQ-MK----SDGTYYLSDVRTGLIVGIFNIGCAFGGLTLGRLGDMYGRRIGLMCVVLVYIVGIVIQIASS--DKWYQYFIGRIISGMGVGGIAVLSPTLISETAPKHIRGTCVSFYQLMITLGIFLGYCTNYGTKDYSNSVQWRVPLGLNFAFAIFMIAGMLMVPESPRFLV-EKGRYEDAKRSLAKSNKVTIEDPSIVAEMDTIMANVETERLAGNASWGELFSNKGAILPRVIMGIMIQSLQQLTGNNYFFYYGTTIFNAVGMK--DSFQTSIVLGIVNFASTFVALYTVDKFGRRKCLLGGSASMAICFVIFSTVGVTSLYPNGKDQPSSKAAGNVMIVFTCLFIFFFAISWAPIAYVIVAESYPLRVKNRAMAIAVGANWIWGFLIGFFTPFITSAIGFSYGYVFMGCLVFSFFYVFFFVCETKGLTLEEVNEMYVEGVKPWKSGSWISK-------------EKRVSE-E--
+                                          ...::::....::::::::::::: ::::::::::::::::  ::::::::. ..    .......::::::::::::::::::::::::::::::::::::::::::::::::::::::  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:...:: :::::::::::::::::::::::::::::::: ::::::::::::::::::   : :::::::::::::::::::::::::::::.:: :::::::::::::::::::::::::::::::::::::  ::::::::::::::::::::::::::::::::::::::::::::::::::::::: .      .: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..                       ....:. .  
+-----------------------------------------MEKEDQEKTGKLTLVLALATFLAAFGSSFQYGYNVAAVNSPS--EFMQQFYNDTYYDRNKENIESFTLTLLWSLTVSMFPFGGFIGSLMVGFLVNNLGRKGALLFNNIFSILPAILMGCSKIAKSFEIIIASRLLVGICAGISSNVVPMYLGELAPKNLRGALGVVPQLFITVGILVAQLFGLRSVLASE-EGWPILLGLTGVPAGLQLLLLPFFPESPRYLLIQKKNESAAEKALQTLRGW---K-DVDMEMEEIRKEDEAEKAAGFISVWKLFRMQS-LRWQLISTIVLMAGQQLSGVNAIYYYADQIYLSAGVKSNDVQYVTAGTGAVNVFMTMVTVFVVELWGRRNLLLIGFSTCLTACIVLTVALALQN-T------IS-WMPYVSIVCVIVYVIGHAVGPSPIPALFITEIFLQSSRPSAYMIGGSVHWLSNFIVGLIFPFIQVGLGPYSFIIFAIICLLTTIYIFMVVPETKGRTFVEINQIFAKKNK----------VSDVYPEKEEKELNDLPPATREQ
+

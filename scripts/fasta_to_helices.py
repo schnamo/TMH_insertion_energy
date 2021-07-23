@@ -57,6 +57,8 @@ def main():
     dir = sys.argv[2] # directory in which to store result files
     pw_ali_folder = sys.argv[3] # folder with pairwise alignments from either hhblits or TM-align
     tm_align = sys.argv[4] # if 1 then it's alignments from TM-align, if 0 alignments from hhblits
+    # if tm-align is 1, expect another argument with parsed alignments
+    pw_ali_folder_af = sys.argv[5]
     final = dir
     dir += 'dgpred_results/'
 
@@ -79,7 +81,10 @@ def main():
         # set reference with the highest alignment score
         set_reference(pw_ali_folder, names[i], tm_align)
         #  infer helix positions based on reference
-        coords_seq, coords_ref = get_coords_hhblits(pw_ali_folder, names[i])
+        if tm_align == "1":
+            coords_seq, coords_ref = get_coords_hhblits(pw_ali_folder_af, names[i])
+        else:
+            coords_seq, coords_ref = get_coords_hhblits(pw_ali_folder + 'hhalign_', names[i])
         center_seq_list, start_seq_list, end_seq_list, center_found, next_to_it, center_via_start_end, center_via_start, center_via_end, total = get_seq_coords_hhblits(seq, names[i], coords_seq, coords_ref, center_found, next_to_it, center_via_start_end, center_via_start, center_via_end, total)
         adjusted_center_seq_list = check_minimum_neighours(seq, names[i], center_seq_list, start_seq_list, end_seq_list)
         # print(names[i], ',', adjusted_center_seq_list[6] + 10)
@@ -346,7 +351,7 @@ def check_neighbours(pos, coords_seq,  coords_ref):
 
 def get_coords_hhblits(dir, id):
 
-    infile = dir + 'hhalign_' + ref_id + '/' + id + '.atab'
+    infile = dir + ref_id + '/' + id + '.atab'
     counter = 1
     coords_seq_list = []
     coords_ref_list = []
